@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+
+  <style>
+
+    @font-face {
+      font-family: Chinacat;
+      src: url('../fonts/Chinacat-Regular.ttf');
+    }
+
+    body{
+      width: 1200px;
+      height: 630px;
+      margin: 0;
+      color: #333333;
+    }
+
+    .container{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .event {
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      text-align: right;
+      font-family: Chinacat;
+      font-size: 26pt;
+    }
+
+    .playerPhoto img {
+      width: 100%;
+      border-radius: 91px;
+    }
+
+
+
+
+
+    .player1 .playerPhoto {
+      position: absolute;
+      left: 558px;
+      top: 44px;
+      width: 185px;
+      height: 185px;
+    }
+
+    .player1 .playerName {
+      position: absolute;
+      left: 458px;
+      top: 234px;
+      font-family: Chinacat;
+      font-size: 27pt;
+      transform: rotate(-4.5deg);
+      text-align: center;
+      width: 400px;
+    }
+
+    .player1 .score {
+      position: absolute;
+      left: 548px;
+      top: 521px;
+      font-family: Chinacat;
+      font-size: 37pt;
+      text-align: center;
+      width: 265px;
+      transform: rotate(-4.5deg);
+    }
+
+
+
+
+
+    .player2 .playerPhoto {
+      position: absolute;
+      left: 288px;
+      top: 149px;
+      width: 135px;
+      height: 135px;
+    }
+
+    .player2 .playerName {
+      position: absolute;
+      left: 199px;
+      top: 283px;
+      font-family: Chinacat;
+      font-size: 22pt;
+      transform: rotate(-16.7deg);
+      text-align: center;
+      width: 370px;
+    }
+
+    .player2 .score {
+      position: absolute;
+      left: 309px;
+      top: 489px;
+      font-family: Chinacat;
+      font-size: 28pt;
+      text-align: center;
+      width: 265px;
+      transform: rotate(-16.7deg);
+    }
+
+
+
+
+
+    .player3 .playerPhoto {
+      position: absolute;
+      left: 869px;
+      top: 176px;
+      width: 110px;
+      height: 110px;
+    }
+
+    .player3 .playerName {
+      position: absolute;
+      left: 766px;
+      top: 286px;
+      font-family: Chinacat;
+      font-size: 20pt;
+      transform: rotate(12.4deg);
+      text-align: center;
+      width: 300px;
+    }
+
+    .player3 .score {
+      position: absolute;
+      left: 744px;
+      top: 441px;
+      font-family: Chinacat;
+      font-size: 23pt;
+      text-align: center;
+      width: 265px;
+      transform: rotate(12.4deg);
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!--BACKGROUND-->
+    <img class="background" src="backgrounds/ranking.jpg"/>
+
+    <!--EVENT-->
+    <div class="event">EVENT #{{eventNumber}}</div>
+
+    <!--PLAYER 1-->
+    <div class="player1">
+      <div class="playerPhoto">
+        <img src="{{player1.photo}}"/>
+      </div>
+      <div class="playerName">{{player1.name}}</div>
+
+      <!--SCORE-->
+      <div class="score">{{player1.score}}</div>
+    </div>
+
+    <!--PLAYER 2-->
+    <div class="player2">
+      <div class="playerPhoto">
+        <img src="{{player2.photo}}"/>
+      </div>
+      <div class="playerName">{{player2.name}}</div>
+
+      <!--SCORE-->
+      <div class="score">{{player2.score}}</div>
+    </div>
+
+    <!--PLAYER 3-->
+    <div class="player3">
+      <div class="playerPhoto">
+        <img src="{{player3.photo}}"/>
+      </div>
+      <div class="playerName">{{player3.name}}</div>
+
+      <!--SCORE-->
+      <div class="score">{{player3.score}}</div>
+    </div>
+
+
+  </div>
+</body>
+</html>
