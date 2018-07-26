@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+
+  <style>
+
+    @font-face {
+      font-family: Chinacat;
+      src: url('../assets/fonts/Chinacat-Regular.ttf');
+    }
+
+    html, body{
+      width: 1200px;
+      height: 630px;
+      margin: 0;
+      color: #333333;
+      padding: 0;
+    }
+
+    .container{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .event {
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      text-align: right;
+      font-family: Chinacat;
+      font-size: 26pt;
+    }
+
+    .photo {
+      position: absolute;
+      left: 650px;
+      top: 23px;
+      width: 187px;
+      height: 187px;
+    }
+    .photo img {
+      width: 100%;
+      border-radius: 91px;
+    }
+
+    .congrats {
+      position: absolute;
+      left: 640px;
+      top: 253px;
+      text-align: left;
+      font-family: Chinacat;
+      font-size: 49pt;
+    }
+
+    .username {
+      position: absolute;
+      left: 640px;
+      top: 364px;
+      text-align: left;
+      font-family: Chinacat;
+      font-size: 42pt;
+    }
+
+    .score {
+      position: absolute;
+      left: 317px;
+      top: 513px;
+      font-family: Chinacat;
+      font-size: 43pt;
+      text-align: center;
+      width: 280px;
+     -webkit-transform: rotate(-10deg);
+      transform: rotate(-10deg);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!--BACKGROUND-->
+    <img class="background" src="../assets/htmls/backgrounds/rank{{rank}}.jpg"/>
+
+    <!--EVENT-->
+    <div class="event">{{rankDate}}</div>
+
+    <!--PLAYER-->
+    <div class="photo">
+      <img src="{{photo}}"/>
+    </div>
+    <div class="congrats">{{textCongrats}}</div>
+    <div class="username">{{username}}</div>
+
+    <!--SCORE-->
+    <div class="score">{{score}}</div>
+
+  </div>
+</body>
+</html>

@@ -1,4 +1,16 @@
 {
-  "share.ranking.caption": "Join Lexio and ... .\n Download Lexio on https://itunes.apple.com/app/lexio/id1286536739",
-  "congrats": "Congratulations !"
+  "caption": "Join Lexio and ... .\n Download Lexio on https://itunes.apple.com/app/lexio/id1286536739",
+  "congrats": "Congratulations !",
+  "month01": "January",
+  "month02": "February",
+  "month03": "March",
+  "month04": "April",
+  "month05": "May",
+  "month06": "June",
+  "month07": "July",
+  "month08": "August",
+  "month09": "September",
+  "month10": "October",
+  "month11": "November",
+  "month12": "December"
 }
